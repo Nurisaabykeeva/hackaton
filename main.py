@@ -12,7 +12,7 @@
 import requests
 from bs4 import BeautifulSoup as BS
 import csv
-
+# test comment
 
 def get_html(url):
     response = requests.get(url)
