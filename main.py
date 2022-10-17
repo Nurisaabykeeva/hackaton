@@ -29,7 +29,7 @@ def get_data(soup):
         {'id': 'w0'}
     )
     phones = catalog.find_all('div', class_='item product_listbox oh')
-    # print(phones)
+    print(phones)
 
     for phone in phones:
         # title = phone.find('a', target = '_blank').text.strip()
@@ -41,7 +41,7 @@ def get_data(soup):
         print(title)
         image = phone.find('img').get('data-ssrc')
         # print(image)
-        price = phone.find('div', class_ = 'listbox_price text-center').text.strip()
+        price = phone.find('div', class_ = 'listbox_price text-center').text.strip
         print(price)
 
         d = {
